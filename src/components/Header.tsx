@@ -6,8 +6,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navigation = [
-    { name: 'Solutions', href: '#solutions' },
-    { name: 'Product', href: '#product' },
+    { name: 'Feature', href: '#solutions' },
+    { name: 'Solutions', href: '#product' },
     { name: 'Why Aynigma', href: '#why' },
     { name: 'Industries', href: '#industries' },
     { name: 'Contact', href: '#contact' },
