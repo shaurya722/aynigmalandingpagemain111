@@ -10,7 +10,7 @@ export default function Footer() {
         <div className='flex justify-center items-center gap-2'>
           <Shield className='w-6 h-6 text-[var(--brand-primary)]' />
           <span className='text-lg font-bold'>
-            Copy Right © {year} Aynigma Security
+            Copyright © {year} Aynigma Security
           </span>
         </div>
 
