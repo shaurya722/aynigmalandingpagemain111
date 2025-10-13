@@ -40,10 +40,10 @@ export default function Hero() {
           </div>
 
           <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-tight'>
-            Securing AI Models.
+            Securing AI Models,
             <br />
             <span className='bg-clip-text bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-accent)]'>
-              Empowering Trust.
+              Protect the Model{' '}
             </span>
           </h1>
 
