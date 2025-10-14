@@ -143,11 +143,7 @@
       "complianceRisk": {
         "title": "Compliance & Risk Register",
         "description": "Instantly map findings and controls to Saudi NCA Essential Cybersecurity Controls and PDPL.",
-        "items": [
-          "NCA",
-          "ECC",
-          "PDPL"
-        ]
+        "items": ["NCA", "ECC", "PDPL"]
       }
     }
   },
@@ -185,6 +181,6 @@
         }
       }
     },
-    "copyright": "© 2024 Aynigma Security. All rights reserved."
+    "copyright": "Aynigma Security. All rights reserved."
   }
 }
