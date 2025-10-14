@@ -1,7 +1,7 @@
 export default function Background3D() {
   return (
     <div className='fixed inset-0 overflow-hidden pointer-events-none'>
-      <div className='absolute inset-0' style={{ perspective: '1000px' }}>
+      {/* <div className='absolute inset-0' style={{ perspective: '1000px' }}>
         <div
           className='absolute w-96 h-96 -top-48 -left-48 opacity-30'
           style={{
@@ -36,7 +36,7 @@ export default function Background3D() {
           }}
         />
 
-        {/* <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96'>
+        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96'>
           {[...Array(3)].map((_, i) => (
             <div
               key={i}
@@ -61,7 +61,7 @@ export default function Background3D() {
               }}
             />
           ))}
-        </div> */}
+        </div>
 
         <div className='absolute inset-0 opacity-20'>
           {[...Array(20)].map((_, i) => (
@@ -97,7 +97,7 @@ export default function Background3D() {
 
         <div className='absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[var(--brand-bg)] to-transparent z-10' />
         <div className='absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[var(--brand-bg)] to-transparent z-10' />
-      </div>
+      </div> */}
 
       <div className='absolute inset-0'>
         {[...Array(30)].map((_, i) => (
