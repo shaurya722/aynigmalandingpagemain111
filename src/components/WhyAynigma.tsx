@@ -1,29 +1,31 @@
 import { Globe, Building2, CheckCircle, Zap } from 'lucide-react'
-
-const reasons = [
-  {
-    icon: Globe,
-    title: 'Saudi & Global Focus',
-    description: 'Arabic/English support. In-kingdom data options.',
-  },
-  {
-    icon: Building2,
-    title: 'Enterprise-Grade',
-    description: 'Proven OSS cores, orchestrated for scale & reliability.',
-  },
-  {
-    icon: CheckCircle,
-    title: 'Compliance-Ready',
-    description: 'Out-of-the-box mapping to NCA,ECC and PDPL,',
-  },
-  {
-    icon: Zap,
-    title: 'Future-Proof',
-    description: 'Plug-in architecture to evolve with AI threats.',
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function WhyAynigma() {
+  const { t } = useTranslation()
+
+  const reasons = [
+    {
+      icon: Globe,
+      title: t('whyAynigma.items.saudiGlobal.title'),
+      description: t('whyAynigma.items.saudiGlobal.description'),
+    },
+    {
+      icon: Building2,
+      title: t('whyAynigma.items.enterpriseGrade.title'),
+      description: t('whyAynigma.items.enterpriseGrade.description'),
+    },
+    {
+      icon: CheckCircle,
+      title: t('whyAynigma.items.complianceReady.title'),
+      description: t('whyAynigma.items.complianceReady.description'),
+    },
+    {
+      icon: Zap,
+      title: t('whyAynigma.items.futureProof.title'),
+      description: t('whyAynigma.items.futureProof.description'),
+    },
+  ]
   return (
     <section id='why' className='py-24 relative overflow-hidden'>
       <div
@@ -37,14 +39,13 @@ export default function WhyAynigma() {
       <div className='container mx-auto px-6 relative z-10'>
         <div className='max-w-3xl mb-16'>
           <h2 className='text-4xl md:text-5xl font-bold mb-4'>
-            Built for Saudi.{' '}
+            {t('whyAynigma.title')}{' '}
             <span className='text-[var(--brand-primary)]'>
-              Ready for the world.
+              {t('whyAynigma.titleHighlight')}
             </span>
           </h2>
           <p className='text-xl text-[var(--brand-foreground-soft)]'>
-            Modular, compliance-ready, and designed for real enterprise
-            environments.
+            {t('whyAynigma.description')}
           </p>
         </div>
 

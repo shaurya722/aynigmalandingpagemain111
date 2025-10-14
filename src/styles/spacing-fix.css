@@ -1,0 +1,143 @@
+/* Spacing fixes specifically for Arabic RTL layout */
+
+/* Key fix: Ensure containers maintain proper spacing regardless of direction */
+[dir="rtl"] .container {
+  direction: ltr; /* Keep container layout LTR for proper spacing */
+}
+
+[dir="rtl"] .container > * {
+  direction: rtl; /* But content inside should be RTL */
+}
+
+/* Ensure sections maintain proper spacing */
+[dir="rtl"] section {
+  direction: ltr; /* Keep section layout LTR */
+}
+
+[dir="rtl"] section > * {
+  direction: rtl; /* Content inside sections should be RTL */
+}
+
+/* Section spacing */
+[dir="rtl"] section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+[dir="rtl"] section.py-12 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* Text container spacing */
+[dir="rtl"] .text-center {
+  text-align: center !important;
+}
+
+[dir="rtl"] .max-w-4xl,
+[dir="rtl"] .max-w-3xl,
+[dir="rtl"] .max-w-2xl {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Grid and flex spacing */
+[dir="rtl"] .grid {
+  display: grid !important;
+}
+
+[dir="rtl"] .flex {
+  display: flex !important;
+}
+
+[dir="rtl"] .flex-col {
+  flex-direction: column !important;
+}
+
+[dir="rtl"] .items-center {
+  align-items: center !important;
+}
+
+[dir="rtl"] .justify-center {
+  justify-content: center !important;
+}
+
+/* Margin and padding utilities */
+[dir="rtl"] .mb-16 {
+  margin-bottom: 4rem !important;
+}
+
+[dir="rtl"] .mb-12 {
+  margin-bottom: 3rem !important;
+}
+
+[dir="rtl"] .mb-8 {
+  margin-bottom: 2rem !important;
+}
+
+[dir="rtl"] .mb-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+[dir="rtl"] .mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+[dir="rtl"] .px-6 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+[dir="rtl"] .py-24 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+[dir="rtl"] .py-12 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+[dir="rtl"] .py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Gap utilities */
+[dir="rtl"] .gap-6 {
+  gap: 1.5rem !important;
+}
+
+[dir="rtl"] .gap-4 {
+  gap: 1rem !important;
+}
+
+[dir="rtl"] .gap-2 {
+  gap: 0.5rem !important;
+}
+
+/* Card and component spacing */
+[dir="rtl"] .p-8 {
+  padding: 2rem !important;
+}
+
+[dir="rtl"] .p-6 {
+  padding: 1.5rem !important;
+}
+
+/* Header spacing */
+[dir="rtl"] header {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Hero section */
+[dir="rtl"] .min-h-screen {
+  min-height: 100vh !important;
+}
+
+/* Button spacing */
+[dir="rtl"] button {
+  padding: inherit !important;
+  margin: inherit !important;
+}

@@ -1,16 +1,14 @@
-import { Shield } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
-  const year = new Date().getFullYear()
+  const { t } = useTranslation()
 
   return (
     <footer className='border-t border-[var(--brand-border-weak)] py-12'>
       <div className='container mx-auto px-6'>
-        {/* <div className='flex flex-col md:flex-row items-center justify-between gap-6'> */}
         <div className='flex justify-center items-center gap-2'>
-          {/* <Shield className='w-6 h-6 text-[var(--brand-primary)]' /> */}
           <span className='text-lg font-bold'>
-            Copyright © {year} Aynigma Security
+            {t('footer.copyright')}
           </span>
         </div>
 

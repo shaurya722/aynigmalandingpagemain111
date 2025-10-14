@@ -1,0 +1,122 @@
+/* Arabic RTL Spacing Fixes */
+
+/* Core principle: Keep layout containers LTR, content RTL */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+/* Main layout containers should maintain LTR for proper spacing */
+[dir="rtl"] .min-h-screen,
+[dir="rtl"] main,
+[dir="rtl"] section,
+[dir="rtl"] .container {
+  direction: ltr;
+}
+
+/* Content inside containers should be RTL */
+[dir="rtl"] .container > nav,
+[dir="rtl"] section > .container,
+[dir="rtl"] .container > .max-w-4xl,
+[dir="rtl"] .container > .max-w-3xl,
+[dir="rtl"] .container > .max-w-2xl {
+  direction: rtl;
+}
+
+/* Text content should be RTL */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] p,
+[dir="rtl"] span,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Center-aligned content should remain centered */
+[dir="rtl"] .text-center,
+[dir="rtl"] .text-center h1,
+[dir="rtl"] .text-center h2,
+[dir="rtl"] .text-center h3,
+[dir="rtl"] .text-center p {
+  text-align: center;
+}
+
+/* Preserve flex layouts for buttons and navigation */
+[dir="rtl"] .flex.items-center.gap-2,
+[dir="rtl"] .flex.items-center.gap-4,
+[dir="rtl"] .flex.items-center.gap-8 {
+  direction: ltr;
+  flex-direction: row-reverse;
+}
+
+/* Grid layouts should maintain proper spacing */
+[dir="rtl"] .grid {
+  direction: ltr;
+}
+
+[dir="rtl"] .grid > * {
+  direction: rtl;
+}
+
+/* Form elements */
+[dir="rtl"] form {
+  direction: rtl;
+}
+
+[dir="rtl"] input::placeholder,
+[dir="rtl"] textarea::placeholder {
+  text-align: right;
+}
+
+/* Navigation specific */
+[dir="rtl"] nav {
+  direction: rtl;
+}
+
+[dir="rtl"] nav .flex {
+  flex-direction: row-reverse;
+}
+
+/* Language switcher positioning */
+[dir="rtl"] .language-switcher {
+  direction: ltr;
+}
+
+/* Ensure proper spacing for key utility classes */
+[dir="rtl"] .py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+[dir="rtl"] .py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+[dir="rtl"] .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+[dir="rtl"] .mb-16 {
+  margin-bottom: 4rem;
+}
+
+[dir="rtl"] .mb-12 {
+  margin-bottom: 3rem;
+}
+
+[dir="rtl"] .mb-8 {
+  margin-bottom: 2rem;
+}
+
+[dir="rtl"] .mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+[dir="rtl"] .mb-4 {
+  margin-bottom: 1rem;
+}

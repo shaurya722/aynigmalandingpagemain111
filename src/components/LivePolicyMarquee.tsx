@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 export default function LivePolicyMarquee() {
-  const track = 'Aligned with NCA, ECC, and PDPL Compliance Standards'
+  const { t } = useTranslation()
+  const track = t('marquee.text')
 
   return (
     <div className='border-y border-[var(--brand-border-weak)] bg-[var(--surface)] py-4 overflow-hidden'>

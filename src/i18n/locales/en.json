@@ -1,0 +1,190 @@
+{
+  "header": {
+    "navigation": {
+      "about": "About",
+      "solutions": "Solutions",
+      "whyAynigma": "Why Aynigma",
+      "industries": "Industries",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "login": "Login",
+      "getStarted": "Get Started"
+    }
+  },
+  "hero": {
+    "badge": "Enterprise AI Security Platform",
+    "title": "Securing AI Models,",
+    "titleHighlight": "Protect the Model",
+    "description": "We protect organizations from the new frontier of risks in AI and cybersecurity. From LLM red teaming to runtime defenses, Aynigma Guard makes AI adoption safe, compliant, and resilient.",
+    "buttons": {
+      "getStarted": "Get Started",
+      "talkToExpert": "Talk to an Expert"
+    }
+  },
+  "contact": {
+    "title": "Let's secure",
+    "titleHighlight": "your AI",
+    "description": "Tell us about your use cases. We'll share a tailored demo.",
+    "form": {
+      "fullName": "Full Name",
+      "workEmail": "Work Email",
+      "company": "Company",
+      "howCanWeHelp": "How can we help?",
+      "requestDemo": "Request a Demo"
+    }
+  },
+  "solutions": {
+    "title": "AI Security,",
+    "titleHighlight": "Reimagined",
+    "description": "The rise of Generative AI brings enormous opportunity—and unprecedented risks. We deliver a complete platform to test, monitor, and defend your AI systems.",
+    "items": {
+      "redTeaming": {
+        "title": "AI Red Teaming",
+        "description": "Stress-test models against jailbreaks, prompt injection, and adversarial attacks."
+      },
+      "runtimeProtection": {
+        "title": "Runtime Protection",
+        "description": "Filter and monitor inputs/outputs in real time to prevent abuse and data leaks."
+      },
+      "agenticSecurity": {
+        "title": "Agentic AI Security",
+        "description": "Safeguard multi-agent workflows from indirect prompt injection and chaining."
+      },
+      "compliance": {
+        "title": "Compliance & Governance",
+        "description": "Map AI risks to NCA ECC and PDPL. Automate evidence and reporting."
+      }
+    }
+  },
+  "whyAynigma": {
+    "title": "Built for Saudi.",
+    "titleHighlight": "Ready for the world.",
+    "description": "Modular, compliance-ready, and designed for real enterprise environments.",
+    "items": {
+      "saudiGlobal": {
+        "title": "Saudi & Global Focus",
+        "description": "Arabic/English support. In-kingdom data options."
+      },
+      "enterpriseGrade": {
+        "title": "Enterprise-Grade",
+        "description": "Proven OSS cores, orchestrated for scale & reliability."
+      },
+      "complianceReady": {
+        "title": "Compliance-Ready",
+        "description": "Out-of-the-box mapping to NCA,ECC and PDPL,"
+      },
+      "futureProof": {
+        "title": "Future-Proof",
+        "description": "Plug-in architecture to evolve with AI threats."
+      }
+    }
+  },
+  "industries": {
+    "title": "Where we deliver",
+    "titleHighlight": "impact",
+    "description": "Tailored solutions across critical sectors.",
+    "items": {
+      "government": {
+        "title": "Government & Smart Cities",
+        "description": "Secure AI at giga-project scale (e.g., NEOM)."
+      },
+      "banking": {
+        "title": "Banking & Finance",
+        "description": "Protect AI-powered fintech & customer data."
+      },
+      "healthcare": {
+        "title": "Healthcare",
+        "description": "Safeguard medical AI, PHI, and uptime."
+      },
+      "energy": {
+        "title": "Oil & Energy",
+        "description": "Defend critical OT/IT infrastructure."
+      },
+      "smes": {
+        "title": "SMEs",
+        "description": "Accessible AI security for growing teams."
+      }
+    }
+  },
+  "product": {
+    "badge": "Aynigma Guard",
+    "title": "One platform. Multiple defenses.",
+    "titleHighlight": "Total visibility.",
+    "subtitle": "Runtime Safety • Red Team Fuzzing • Agentic",
+    "features": {
+      "redTeamFuzzing": {
+        "title": "Red Team Fuzzing",
+        "description": "Uncover vulnerabilities before attackers do with automated and guided fuzzing.",
+        "items": [
+          "Jailbreak & injection coverage",
+          "Custom policy packs",
+          "Exportable reports"
+        ]
+      },
+      "runtimeSafety": {
+        "title": "Runtime Safety",
+        "description": "Real-time classification, filtering, and policy enforcement across inputs/outputs.",
+        "items": [
+          "PII & toxicity detection",
+          "Prompt shielding",
+          "Abuse rate limiting"
+        ]
+      },
+      "agentic": {
+        "title": "Agentic",
+        "description": "Risk detection for autonomous & multi-agent systems with chain-of-thought hygiene.",
+        "items": [
+          "Indirect injection alerts",
+          "Tool-use allowlists",
+          "Audit trails"
+        ]
+      },
+      "complianceRisk": {
+        "title": "Compliance & Risk Register",
+        "description": "Instantly map findings and controls to Saudi NCA Essential Cybersecurity Controls and PDPL.",
+        "items": [
+          "NCA",
+          "ECC",
+          "PDPL"
+        ]
+      }
+    }
+  },
+  "marquee": {
+    "text": "Aligned with NCA, ECC, and PDPL Compliance Standards"
+  },
+  "footer": {
+    "description": "Securing the future of AI, one model at a time.",
+    "sections": {
+      "product": {
+        "title": "Product",
+        "links": {
+          "features": "Features",
+          "pricing": "Pricing",
+          "security": "Security",
+          "integrations": "Integrations"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About Us",
+          "careers": "Careers",
+          "blog": "Blog",
+          "contact": "Contact"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "documentation": "Documentation",
+          "support": "Support",
+          "community": "Community",
+          "status": "Status"
+        }
+      }
+    },
+    "copyright": "© 2024 Aynigma Security. All rights reserved."
+  }
+}

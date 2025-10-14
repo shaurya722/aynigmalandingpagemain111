@@ -1,43 +1,45 @@
 import { Building, Landmark, Heart, Fuel, Briefcase } from 'lucide-react';
-
-const industries = [
-  {
-    icon: Building,
-    title: 'Government & Smart Cities',
-    description: 'Secure AI at giga-project scale (e.g., NEOM).',
-  },
-  {
-    icon: Landmark,
-    title: 'Banking & Finance',
-    description: 'Protect AI-powered fintech & customer data.',
-  },
-  {
-    icon: Heart,
-    title: 'Healthcare',
-    description: 'Safeguard medical AI, PHI, and uptime.',
-  },
-  {
-    icon: Fuel,
-    title: 'Oil & Energy',
-    description: 'Defend critical OT/IT infrastructure.',
-  },
-  {
-    icon: Briefcase,
-    title: 'SMEs',
-    description: 'Accessible AI security for growing teams.',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Industries() {
+  const { t } = useTranslation();
+
+  const industries = [
+    {
+      icon: Building,
+      title: t('industries.items.government.title'),
+      description: t('industries.items.government.description'),
+    },
+    {
+      icon: Landmark,
+      title: t('industries.items.banking.title'),
+      description: t('industries.items.banking.description'),
+    },
+    {
+      icon: Heart,
+      title: t('industries.items.healthcare.title'),
+      description: t('industries.items.healthcare.description'),
+    },
+    {
+      icon: Fuel,
+      title: t('industries.items.energy.title'),
+      description: t('industries.items.energy.description'),
+    },
+    {
+      icon: Briefcase,
+      title: t('industries.items.smes.title'),
+      description: t('industries.items.smes.description'),
+    },
+  ];
   return (
     <section id="industries" className="py-24 bg-[var(--surface)]/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Where we deliver <span className="text-[var(--brand-accent)]">impact</span>
+            {t('industries.title')} <span className="text-[var(--brand-accent)]">{t('industries.titleHighlight')}</span>
           </h2>
           <p className="text-xl text-[var(--brand-foreground-soft)]">
-            Tailored solutions across critical sectors.
+            {t('industries.description')}
           </p>
         </div>
 

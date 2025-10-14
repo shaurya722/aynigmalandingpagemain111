@@ -1,17 +1,19 @@
-import { Shield, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import logo from '../assets/Frame 3020.svg'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { t } = useTranslation()
 
   const navigation = [
-    { name: 'About', href: '#solutions' },
-    { name: 'Solutions', href: '#product' },
-    { name: 'Why Aynigma', href: '#why' },
-    { name: 'Industries', href: '#industries' },
-    { name: 'Contact', href: '#contact' },
-    // { name: 'Resources', href: '#resources' },
+    { name: t('header.navigation.about'), href: '#about' },
+    { name: t('header.navigation.solutions'), href: '#solutions' },
+    { name: t('header.navigation.whyAynigma'), href: '#why' },
+    { name: t('header.navigation.industries'), href: '#industries' },
+    { name: t('header.navigation.contact'), href: '#contact' },
   ]
 
   return (
@@ -60,12 +62,13 @@ export default function Header() {
           </div>
 
           <div className='hidden lg:flex items-center gap-4'>
+            <LanguageSwitcher />
             <button className='px-4 py-2 text-[var(--brand-foreground-soft)] hover:text-white transition-colors relative group/btn'>
-              Login
+              {t('header.buttons.login')}
               <div className='absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand-primary)] group-hover/btn:w-full transition-all duration-300' />
             </button>
             <button className='relative px-6 py-2 bg-[var(--brand-primary)] hover:bg-[var(--brand-accent)] text-white font-semibold rounded-lg transition-all duration-300 overflow-hidden group/cta'>
-              <span className='relative z-10'>Get Started</span>
+              <span className='relative z-10'>{t('header.buttons.getStarted')}</span>
               <div
                 className='absolute inset-0 opacity-0 group-hover/cta:opacity-100 transition-opacity duration-300'
                 style={{
@@ -101,11 +104,14 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
+              <div className='flex justify-center py-2'>
+                <LanguageSwitcher />
+              </div>
               <button className='px-4 py-2 text-left text-[var(--brand-foreground-soft)] hover:text-white transition-colors'>
-                Login
+                {t('header.buttons.login')}
               </button>
               <button className='px-6 py-2 bg-[var(--brand-primary)] hover:bg-[var(--brand-accent)] text-white font-semibold rounded-lg transition-all duration-300'>
-                Get Started
+                {t('header.buttons.getStarted')}
               </button>
             </div>
           </div>

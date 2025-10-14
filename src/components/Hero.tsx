@@ -1,9 +1,11 @@
 import { Shield, ArrowRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 // import AnimatedBackground from './AnimatedBackground';
 
 export default function Hero() {
+  const { t } = useTranslation()
   return (
-    <section className='relative min-h-[90vh] flex items-center justify-center overflow-hidden'>
+    <section id='hero' className='relative min-h-[90vh] flex items-center justify-center overflow-hidden'>
       {/* <AnimatedBackground /> */}
 
       <div
@@ -35,31 +37,29 @@ export default function Hero() {
           <div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--brand-border-weak)] mb-8'>
             <Shield className='w-4 h-4 text-[var(--brand-primary)]' />
             <span className='text-sm text-[var(--brand-foreground-soft)]'>
-              Enterprise AI Security Platform
+              {t('hero.badge')}
             </span>
           </div>
 
           <h1 className='text-5xl md:text-7xl font-bold mb-6 leading-tight'>
-            Securing AI Models,
+            {t('hero.title')}
             <br />
             <span className='bg-clip-text bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-accent)]'>
-              Protect the Model{' '}
+              {t('hero.titleHighlight')}{' '}
             </span>
           </h1>
 
           <p className='text-xl md:text-2xl text-[var(--brand-foreground-soft)] mb-12 max-w-3xl mx-auto leading-relaxed'>
-            We protect organizations from the new frontier of risks in AI and
-            cybersecurity. From LLM red teaming to runtime defenses, Aynigma
-            Guard makes AI adoption safe, compliant, and resilient.
+            {t('hero.description')}
           </p>
 
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
             <button className='group px-8 py-4 bg-[var(--brand-primary)] hover:bg-[var(--brand-accent)] text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2'>
-              Get Started
+              {t('hero.buttons.getStarted')}
               <ArrowRight className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
             </button>
             <button className='px-8 py-4 bg-transparent border border-[var(--brand-border)] hover:bg-[var(--surface)] text-white font-semibold rounded-lg transition-all duration-300'>
-              Talk to an Expert
+              {t('hero.buttons.talkToExpert')}
             </button>
           </div>
         </div>
