@@ -5,16 +5,87 @@
       "solutions": "Solutions",
       "whyAynigma": "Why Aynigma",
       "industries": "Industries",
-      "contact": "Contact"
+      "contact": "Contact",
+      "company": "Company"
     },
     "buttons": {
       "getStarted": "Get Started"
     }
   },
+  "company": {
+    "about": "About Us",
+    "careers": "Careers",
+    "partners": "Partners",
+    "privacy": "Privacy Policy",
+    "resources": "Resources",
+    "caseStudies": "Case Studies",
+    "blog": "Blog"
+  },
+  "common": {
+    "learnMoreAbout": "Learn more about {{name}}",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "keyCapabilities": "Key Capabilities",
+    "businessOutcomes": "Business Outcomes"
+  },
+  "solutions": {
+    "title": "AI Security,",
+    "titleHighlight": "Reimagined",
+    "description": "The rise of Generative AI brings enormous opportunity—and unprecedented risks. We deliver a complete platform to test, monitor, and defend your AI systems.",
+    "items": {
+      "redTeaming": {
+        "title": "AI Red Teaming",
+        "description": "Stress-test models against jailbreaks, prompt injection, and adversarial attacks."
+      },
+      "runtimeProtection": {
+        "title": "AI Runtime Security",
+        "description": "Filter and monitor inputs/outputs in real time to prevent abuse and data leaks."
+      },
+      "agenticSecurity": {
+        "title": "AI Agentic Scanning",
+        "description": "Safeguard multi-agent workflows from indirect prompt injection and chaining."
+      },
+      "mcpSecurity": {
+        "title": "MCP Security"
+      },
+      "compliance": {
+        "title": "Compliance Monitoring",
+        "description": "Map AI risks to NCA ECC and PDPL. Automate evidence and reporting."
+      },
+      "aiSCA": {
+        "title": "AI SCA"
+      },
+      "aiSAST": {
+        "title": "AI SAST"
+      },
+      "incidentResponse": {
+        "title": "AI Incident Response"
+      }
+    }
+  },
+  "industries": {
+    "title": "Where we deliver",
+    "titleHighlight": "impact",
+    "description": "Tailored solutions across critical sectors.",
+    "items": {
+      "healthcare": {"title": "HealthCare", "description": "Empowering hospitals, clinics, and research institutions with digital transformation, AI diagnostics, and patient management solutions."},
+      "finance": {"title": "Finance", "description": ""},
+      "technology": {"title": "Technology", "description": ""},
+      "manufacturing": {"title": "Manufacturing", "description": ""},
+      "legal": {"title": "Legal", "description": ""},
+      "education": {"title": "Education", "description": ""},
+    "government": {
+      "title": "Government & Smart Cities",
+      "description": "Building digital governance systems, smart city infrastructure, and citizen engagement platforms to enable better services."
+    },      "banking": {"title": "Banking & Finance", "description": "Enhancing banking operations with secure fintech solutions, AI fraud detection, and seamless digital payment experiences."},
+      "energy": {"title": "Oil & Energy", "description": "Enabling sustainability and operational efficiency through IoT monitoring, predictive maintenance, and data intelligence."},
+      "smes": {"title": "SMEs", "description": "Helping small and medium enterprises scale through affordable digital tools, automation, and growth-driven strategies."}
+    }
+  },
   "hero": {
     "badge": "Enterprise AI Security Platform",
-    "title": "Secure the code,",
-    "titleHighlight": "Protect the Model",
+    "title": "Secure The Code,",
+    "titleHighlight": "Protect The Model",
     "description": "We protect organizations from the new frontier of risks in AI and cybersecurity. From LLM red teaming to runtime defenses, Aynigma Guard makes AI adoption safe, compliant, and resilient.",
     "buttons": {
       "getStarted": "Get Started",
@@ -31,29 +102,6 @@
       "company": "Company",
       "howCanWeHelp": "How can we help?",
       "requestDemo": "Request a Demo"
-    }
-  },
-  "solutions": {
-    "title": "AI Security,",
-    "titleHighlight": "Reimagined",
-    "description": "The rise of Generative AI brings enormous opportunity—and unprecedented risks. We deliver a complete platform to test, monitor, and defend your AI systems.",
-    "items": {
-      "redTeaming": {
-        "title": "AI Red Teaming",
-        "description": "Stress-test models against jailbreaks, prompt injection, and adversarial attacks."
-      },
-      "runtimeProtection": {
-        "title": "AI Runtime Protection",
-        "description": "Filter and monitor inputs/outputs in real time to prevent abuse and data leaks."
-      },
-      "agenticSecurity": {
-        "title": "Agentic AI Security",
-        "description": "Safeguard multi-agent workflows from indirect prompt injection and chaining."
-      },
-      "compliance": {
-        "title": "Compliance & Governance",
-        "description": "Map AI risks to NCA ECC and PDPL. Automate evidence and reporting."
-      }
     }
   },
   "whyAynigma": {
@@ -76,33 +124,6 @@
       "futureProof": {
         "title": "Future-Proof",
         "description": "Plug-in architecture to evolve with AI threats."
-      }
-    }
-  },
-  "industries": {
-    "title": "Where we deliver",
-    "titleHighlight": "impact",
-    "description": "Tailored solutions across critical sectors.",
-    "items": {
-      "government": {
-        "title": "Government & Smart Cities",
-        "description": "Secure AI at giga-project scale (e.g., NEOM)."
-      },
-      "banking": {
-        "title": "Banking & Finance",
-        "description": "Protect AI-powered fintech & customer data."
-      },
-      "healthcare": {
-        "title": "Healthcare",
-        "description": "Safeguard medical AI, PHI, and uptime."
-      },
-      "energy": {
-        "title": "Oil & Energy",
-        "description": "Defend critical OT/IT infrastructure."
-      },
-      "smes": {
-        "title": "SMEs",
-        "description": "Accessible AI security for growing teams."
       }
     }
   },
