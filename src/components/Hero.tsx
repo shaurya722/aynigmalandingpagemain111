@@ -65,11 +65,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className='absolute bottom-12 left-1/2 -translate-x-1/2'>
+      {/* <div className='absolute bottom-12 left-1/2 -translate-x-1/2'>
         <div className='w-6 h-10 border-2 border-[var(--brand-border)] rounded-full flex items-start justify-center p-2'>
           <div className='w-1.5 h-3 bg-[var(--brand-primary)] rounded-full animate-bounce' />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

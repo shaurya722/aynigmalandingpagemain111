@@ -8,13 +8,12 @@
       "contact": "Contact"
     },
     "buttons": {
-      "login": "Login",
       "getStarted": "Get Started"
     }
   },
   "hero": {
     "badge": "Enterprise AI Security Platform",
-    "title": "Securing AI Models,",
+    "title": "Secure the code,",
     "titleHighlight": "Protect the Model",
     "description": "We protect organizations from the new frontier of risks in AI and cybersecurity. From LLM red teaming to runtime defenses, Aynigma Guard makes AI adoption safe, compliant, and resilient.",
     "buttons": {
@@ -44,7 +43,7 @@
         "description": "Stress-test models against jailbreaks, prompt injection, and adversarial attacks."
       },
       "runtimeProtection": {
-        "title": "Runtime Protection",
+        "title": "AI Runtime Protection",
         "description": "Filter and monitor inputs/outputs in real time to prevent abuse and data leaks."
       },
       "agenticSecurity": {
