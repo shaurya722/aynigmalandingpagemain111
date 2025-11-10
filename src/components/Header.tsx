@@ -34,11 +34,11 @@ export default function Header() {
 
   // Set document direction based on language
   useEffect(() => {
-    const dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.dir = dir;
-    document.documentElement.lang = i18n.language;
-    document.body.dir = dir; // Ensure body has the correct direction
-  }, []);
+    const dir = i18n.language === 'ar' ? 'rtl' : 'ltr'
+    document.documentElement.dir = dir
+    document.documentElement.lang = i18n.language
+    document.body.dir = dir // Ensure body has the correct direction
+  }, [])
 
   const solutions = [
     { name: 'AI Red Teaming', href: '/ai-red-teaming', icon: Shield },
@@ -64,13 +64,37 @@ export default function Header() {
   ]
 
   const industries = [
-    { name: t('industries.items.healthcare.title'), href: '/healthcare', icon: LineChart },
-    { name: t('industries.items.finance.title'), href: '/finance', icon: LineChart },
-    { name: t('industries.items.technology.title'), href: '/technology', icon: Code },
-    { name: t('industries.items.manufacturing.title'), href: '/manufacturing', icon: Building2 },
+    {
+      name: t('industries.items.healthcare.title'),
+      href: '/healthcare',
+      icon: LineChart,
+    },
+    {
+      name: t('industries.items.finance.title'),
+      href: '/finance',
+      icon: LineChart,
+    },
+    {
+      name: t('industries.items.technology.title'),
+      href: '/technology',
+      icon: Code,
+    },
+    {
+      name: t('industries.items.manufacturing.title'),
+      href: '/manufacturing',
+      icon: Building2,
+    },
     { name: t('industries.items.legal.title'), href: '/legal', icon: Gavel },
-    { name: t('industries.items.education.title'), href: '/education', icon: GraduationCap },
-    { name: t('industries.items.government.title'), href: '/government', icon: Building },
+    {
+      name: t('industries.items.education.title'),
+      href: '/education',
+      icon: GraduationCap,
+    },
+    {
+      name: t('industries.items.government.title'),
+      href: '/government',
+      icon: Building,
+    },
   ]
 
   const company = [
@@ -111,7 +135,7 @@ export default function Header() {
   }
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 border-b border-[var(--brand-border-weak)] bg-[var(--brand-bg)]/80 backdrop-blur-xl ${
         i18n.language === 'ar' ? 'rtl' : 'ltr'
       }`}
@@ -131,7 +155,9 @@ export default function Header() {
       <nav className='container mx-auto px-6 py-4 relative'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center gap-2 group cursor-pointer'>
-            <Link to="/"><img src={logo} alt='logo' width={150} /></Link>
+            <Link to='/'>
+              <img src={logo} alt='logo' width={150} />
+            </Link>
           </div>
 
           <div className='hidden lg:flex items-center gap-8'>
@@ -189,7 +215,9 @@ export default function Header() {
                                       {subItem.name}
                                     </p>
                                     <p className='mt-1 text-sm text-[var(--brand-foreground-soft)]'>
-                                      {t('common.learnMoreAbout', { name: subItem.name.toLowerCase() })}
+                                      {t('common.learnMoreAbout', {
+                                        name: subItem.name.toLowerCase(),
+                                      })}
                                     </p>
                                   </div>
                                 </div>
@@ -249,7 +277,7 @@ export default function Header() {
 
           <div className='hidden lg:flex items-center gap-4'>
             <LanguageSwitcher />
-            <button
+            {/* <button
               onClick={() => {
                 const section = document.getElementById('contact')
                 if (section) section.scrollIntoView({ behavior: 'smooth' })
@@ -266,7 +294,7 @@ export default function Header() {
                     'linear-gradient(45deg, var(--brand-primary), var(--brand-accent))',
                 }}
               />
-            </button>
+            </button> */}
           </div>
 
           <button

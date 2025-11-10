@@ -5,7 +5,10 @@ import { useTranslation } from 'react-i18next'
 export default function Hero() {
   const { t } = useTranslation()
   return (
-    <section id='hero' className='relative min-h-[90vh] flex items-center justify-center overflow-hidden'>
+    <section
+      id='hero'
+      className='relative min-h-[90vh] flex items-center justify-center overflow-hidden'
+    >
       {/* <AnimatedBackground /> */}
 
       <div
@@ -54,13 +57,38 @@ export default function Hero() {
           </p>
 
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-            <button className='group px-8 py-4 bg-[var(--brand-primary)] hover:bg-[var(--brand-accent)] text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2'>
+            <button
+              className='group px-8 py-4 bg-[var(--brand-primary)] hover:bg-[var(--brand-accent)] text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2'
+              onClick={() => {
+                const section = document.getElementById('contact')
+                if (section) section.scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
               {t('hero.buttons.getStarted')}
               <ArrowRight className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
             </button>
-            <button className='px-8 py-4 bg-transparent border border-[var(--brand-border)] hover:bg-[var(--surface)] text-white font-semibold rounded-lg transition-all duration-300'>
+            {/* <button
+              onClick={() => {
+                const section = document.getElementById('contact')
+                if (section) section.scrollIntoView({ behavior: 'smooth' })
+              }}
+              className='group px-8 py-4 bg-[var(--brand-primary)] hover:bg-[var(--brand-accent)] text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2'
+            >
+              <span className='flex gap-3 items-center'>
+                {t('header.buttons.getStarted')}
+                <ArrowRight className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
+              </span>
+              <div
+                className='absolute inset-0 opacity-0 group-hover/cta:opacity-100 transition-opacity duration-300'
+                style={{
+                  background:
+                    'linear-gradient(45deg, var(--brand-primary), var(--brand-accent))',
+                }}
+              />
+            </button> */}
+            {/* <button className='px-8 py-4 bg-transparent border border-[var(--brand-border)] hover:bg-[var(--surface)] text-white font-semibold rounded-lg transition-all duration-300'>
               {t('hero.buttons.talkToExpert')}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
