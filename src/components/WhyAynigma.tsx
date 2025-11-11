@@ -37,9 +37,9 @@ export default function WhyAynigma() {
       />
 
       <div className='container mx-auto px-6 relative z-10'>
-        <div className='max-w-3xl mb-16'>
+        <div className='text-center mb-16'>
           <h2 className='text-4xl md:text-5xl font-bold mb-4'>
-            {t('whyAynigma.title')}{' '}
+            {t('whyAynigma.title')}
             <span className='text-[var(--brand-primary)]'>
               {t('whyAynigma.titleHighlight')}
             </span>

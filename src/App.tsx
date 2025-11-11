@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import LivePolicyMarquee from './components/LivePolicyMarquee';
@@ -13,28 +11,28 @@ import Footer from './components/Footer';
 import Background3D from './components/Background3D';
 
 // Import industry pages
-import HealthcarePage from './pages/HealthcarePage';
-import FinancePage from './pages/FinancePage';
-import TechnologyPage from './pages/TechnologyPage';
-import ManufacturingPage from './pages/ManufacturingPage';
-import LegalPage from './pages/LegalPage';
-import EducationPage from './pages/EducationPage';
-import GovernmentPage from './pages/GovernmentPage';
+import HealthcarePage from './pages/industries/HealthcarePage';
+import FinancePage from './pages/industries/FinancePage';
+import TechnologyPage from './pages/industries/TechnologyPage';
+import ManufacturingPage from './pages/industries/ManufacturingPage';
+import LegalPage from './pages/industries/LegalPage';
+import EducationPage from './pages/industries/EducationPage';
+import GovernmentPage from './pages/industries/GovernmentPage';
 
 // Import solution pages
-import AIRedTeamingPage from './pages/AIRedTeamingPage';
-import AIRuntimeSecurityPage from './pages/AIRuntimeSecurityPage';
-import AIAgenticScanningPage from './pages/AIAgenticScanningPage';
-import MCPSecurityPage from './pages/MCPSecurityPage';
-import ComplianceMonitoringPage from './pages/ComplianceMonitoringPage';
-import AISCAPage from './pages/AISCAPage';
-import AISASTPage from './pages/AISASTPage';
-import AIIncidentResponsePage from './pages/AIIncidentResponsePage';
+import AIRedTeamingPage from './pages/solutions/AIRedTeamingPage';
+import AIRuntimeSecurityPage from './pages/solutions/AIRuntimeSecurityPage';
+import AIAgenticScanningPage from './pages/solutions/AIAgenticScanningPage';
+import MCPSecurityPage from './pages/solutions/MCPSecurityPage';
+import ComplianceMonitoringPage from './pages/solutions/ComplianceMonitoringPage';
+import AISCAPage from './pages/solutions/AISCAPage';
+import AISASTPage from './pages/solutions/AISASTPage';
+import AIIncidentResponsePage from './pages/solutions/AIIncidentResponsePage';
 
 // Import company pages
-import AboutUsPage from './pages/AboutUsPage';
-import CareersPage from './pages/CareersPage';
-import PartnersPage from './pages/PartnersPage';
+import AboutUsPage from './pages/company/AboutUsPage';
+import CareersPage from './pages/company/CareersPage';
+import PartnersPage from './pages/company/PartnersPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 function HomePage() {
@@ -52,13 +50,6 @@ function HomePage() {
 }
 
 function App() {
-  const { i18n } = useTranslation();
-
-  useEffect(() => {
-    // Set document direction based on language
-    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
 
   return (
     <Router>

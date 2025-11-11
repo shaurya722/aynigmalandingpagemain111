@@ -7,23 +7,23 @@ export default function About() {
   const about = [
     {
       icon: Shield,
-      title: t('solutions.items.redTeaming.title'),
-      description: t('solutions.items.redTeaming.description'),
+      title: t('solutions.items.redTeaming.badgeText'),
+      description: t('solutions.items.redTeaming.title'),
     },
     {
       icon: Eye,
-      title: t('solutions.items.runtimeProtection.title'),
-      description: t('solutions.items.runtimeProtection.description'),
+      title: t('solutions.items.runtimeProtection.badgeText'),
+      description: t('solutions.items.runtimeProtection.title'),
     },
     {
       icon: Network,
-      title: t('solutions.items.agenticSecurity.title'),
-      description: t('solutions.items.agenticSecurity.description'),
+      title: t('solutions.items.agenticSecurity.badgeText'),
+      description: t('solutions.items.agenticSecurity.title'),
     },
     {
       icon: FileCheck,
-      title: t('solutions.items.compliance.title'),
-      description: t('solutions.items.compliance.description'),
+      title: t('solutions.compliance.title'),
+      description: t('solutions.compliance.description'),
     },
   ]
   return (

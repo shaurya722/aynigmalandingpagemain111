@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, ChevronDown } from 'lucide-react';
 
@@ -13,19 +13,30 @@ export default function LanguageSwitcher() {
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
+  // Set initial direction on mount
+  useEffect(() => {
+    const isRTL = i18n.language === 'ar';
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
   const handleLanguageChange = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
     setIsOpen(false);
     
     // Update document direction for RTL support
-    document.documentElement.dir = languageCode === 'ar' ? 'rtl' : 'ltr';
+    const isRTL = languageCode === 'ar';
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = languageCode;
     
-    // Force a small delay to ensure styles are applied
+    // Force a complete style recalculation
     setTimeout(() => {
       // Trigger a re-render by updating a CSS custom property
-      document.documentElement.style.setProperty('--rtl-update', Date.now().toString());
-    }, 100);
+      document.documentElement.style.setProperty('--direction-update', Date.now().toString());
+      
+      // Force layout recalculation by accessing offsetHeight
+      void document.body.offsetHeight;
+    }, 10);
   };
 
   return (

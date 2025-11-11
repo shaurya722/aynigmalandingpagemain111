@@ -10,6 +10,14 @@
     },
     "buttons": {
       "getStarted": "Get Started"
+    },
+    "flyout": {
+      "latestUpdates": "Latest Updates",
+      "resources": "Resources",
+      "newFeatureRelease": "New Feature Release",
+      "checkLatestFeatures": "Check out our latest security features",
+      "documentation": "Documentation",
+      "browseTechnicalGuides": "Browse our technical guides"
     }
   },
   "company": {
@@ -20,6 +28,44 @@
     "resources": "Resources",
     "caseStudies": "Case Studies",
     "blog": "Blog"
+  },
+  "aboutUs": {
+    "title": "Securing the Intelligent Future",
+    "subtitle": "Aynigma Security Solutions Corp is a cybersecurity and AI defense company safeguarding intelligent systems across Saudi Arabia and beyond.",
+    "badgeText": "About Aynigma",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "content": "Aynigma Security Solutions Corp was founded to protect the next generation of intelligent technologies — from AI-driven platforms to critical national infrastructure. With headquarters in Saudi Arabia and the United States, we combine international expertise with local commitment to build trust in AI and digital transformation.\n\nOur mission is to make AI systems secure, ethical, and compliant by design. We work alongside enterprises, governments, and innovators to ensure that every digital interaction — from a chatbot to a national data platform — operates safely and transparently."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "To be the leading force in AI and cybersecurity innovation across the Middle East, empowering secure digital transformation in alignment with Saudi Arabia's Vision 2030."
+    },
+    "coreValues": {
+      "title": "Our Core Values",
+      "items": [
+        "Integrity: We build solutions that prioritize trust and transparency.",
+        "Innovation: We use AI to defend AI — combining creativity with precision.",
+        "Compliance: We uphold the highest standards of NCA, PDPL, and global regulations.",
+        "Collaboration: We partner with government, academia, and industry to advance national resilience."
+      ]
+    },
+    "differentiators": {
+      "title": "Key Differentiators",
+      "items": [
+        "Dual presence in the U.S. and Saudi Arabia for global best practices and local compliance.",
+        "Expertise in both cybersecurity and AI model protection.",
+        "Alignment with Vision 2030's digital economy goals.",
+        "Active contributor to Saudi's growing AI and cyber innovation ecosystem."
+      ]
+    },
+    "ctaTitle": "Partner with Aynigma to secure the foundation of tomorrow's intelligent systems.",
+    "ctaSubtitle": "Join us in building a safer, more trustworthy AI ecosystem.",
+    "trustIndicators": {
+      "saudiFounded": "Saudi Founded",
+      "vision2030": "Vision 2030 Aligned",
+      "globalReach": "Global Reach"
+    }
   },
   "common": {
     "learnMoreAbout": "Learn more about {{name}}",
@@ -34,33 +80,220 @@
     "description": "The rise of Generative AI brings enormous opportunity—and unprecedented risks. We deliver a complete platform to test, monitor, and defend your AI systems.",
     "items": {
       "redTeaming": {
-        "title": "AI Red Teaming",
-        "description": "Stress-test models against jailbreaks, prompt injection, and adversarial attacks."
+        "title": "Expose AI Weaknesses Before Attackers Do",
+        "subtitle": "Simulate real-world adversarial attacks to uncover hidden vulnerabilities across your AI models, pipelines, and agents.",
+        "badgeText": "AI Red Teaming",
+        "challengeContent": "AI systems are uniquely exposed — from prompt injection to data leakage and model inversion. Without adversarial testing, even the most advanced LLMs and AI workflows can be manipulated or exfiltrated.",
+        "solutionContent": "Aynigma's AI Red Teaming delivers structured, repeatable, and customizable adversarial testing to reveal vulnerabilities before they become breaches. Using both automated and human-in-the-loop probes, we assess how your AI systems respond to malicious intent, policy evasion, and unauthorized data extraction.",
+        "keyCapabilities": {
+          "attacks": {
+            "title": "Simulated Attacks",
+            "description": "Simulated attacks aligned with OWASP Top 10 for LLMs"
+          },
+          "probes": {
+            "title": "Customizable Probes",
+            "description": "Customizable probe policies for prompt injection, data leakage, and jailbreaks"
+          },
+          "scoring": {
+            "title": "Automated Scoring",
+            "description": "Automated scoring of model resilience and defense coverage"
+          },
+          "sandbox": {
+            "title": "Safe Sandbox",
+            "description": "Safe sandbox environments to test without risking production systems"
+          }
+        },
+        "businessOutcomes": {
+          "vulnerability": {
+            "title": "Early Vulnerability Detection",
+            "description": "Identify and close exploitable AI vulnerabilities early"
+          },
+          "trust": {
+            "title": "Enhanced Trust",
+            "description": "Strengthen model trust, compliance, and brand reputation"
+          },
+          "regulatory": {
+            "title": "Regulatory Support",
+            "description": "Support NCA and PDPL security mandates for responsible AI"
+          },
+          "cost": {
+            "title": "Cost Reduction",
+            "description": "Reduce time and cost of post-deployment incident remediation"
+          }
+        },
+        "ctaTitle": "Run adversarial simulations before your attackers do.",
+        "ctaSubtitle": "Contact Aynigma to schedule a Red Team assessment.",
+        "trustIndicators": {
+          "owasp": "OWASP Aligned",
+          "nca": "NCA Compliant",
+          "safe": "Safe Testing"
+        }
       },
+
       "runtimeProtection": {
-        "title": "AI Runtime Security",
-        "description": "Filter and monitor inputs/outputs in real time to prevent abuse and data leaks."
+        "title": "Real-Time Defense for Intelligent Systems",
+        "subtitle": "Monitor, detect, and contain malicious or abnormal behavior during live AI operations.",
+        "badgeText": "AI Runtime Security",
+        "challengeContent": "Once deployed, AI models face continuous threats — from input manipulation and data exfiltration to malicious retraining attempts. Static testing is not enough; runtime visibility is essential.",
+        "solutionContent": "Aynigma's AI Runtime Security continuously monitors model behavior, user interactions, and inference outputs to detect real-time threats. Our system integrates with your SOC and SIEM tools to isolate compromised sessions and enforce policy-level guardrails automatically.",
+        "keyCapabilities": {
+          "anomaly": {
+            "title": "Anomaly Detection",
+            "description": "Real-time anomaly detection using behavioral baselines"
+          },
+          "shield": {
+            "title": "AI Shield",
+            "description": "AI shield for prompt injection and malicious query blocking"
+          },
+          "isolation": {
+            "title": "Session Isolation",
+            "description": "Automated isolation and containment of compromised sessions"
+          },
+          "soc": {
+            "title": "SOC Integration",
+            "description": "SOC and SIEM integration for unified incident response"
+          }
+        },
+        "businessOutcomes": {
+          "prevention": {
+            "title": "Exploit Prevention",
+            "description": "Prevent prompt-based exploits and live model abuse"
+          },
+          "compliance": {
+            "title": "Continuous Compliance",
+            "description": "Ensure continuous compliance and uptime"
+          },
+          "trust": {
+            "title": "Trust Strengthening",
+            "description": "Strengthen AI trustworthiness and response accuracy"
+          },
+          "response": {
+            "title": "Faster Response",
+            "description": "Reduce Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR)"
+          }
+        },
+        "ctaTitle": "Protect your AI models at runtime.",
+        "ctaSubtitle": "Deploy Aynigma's AI Shield today.",
+        "trustIndicators": {
+          "monitoring": "Real-Time Monitoring",
+          "soc": "SOC Integrated",
+          "protection": "24/7 Protection"
+        }
       },
+
       "agenticSecurity": {
-        "title": "AI Agentic Scanning",
-        "description": "Safeguard multi-agent workflows from indirect prompt injection and chaining."
-      },
-      "mcpSecurity": {
-        "title": "MCP Security"
-      },
-      "compliance": {
-        "title": "Compliance Monitoring",
-        "description": "Map AI risks to NCA ECC and PDPL. Automate evidence and reporting."
-      },
-      "aiSCA": {
-        "title": "AI SCA"
-      },
-      "aiSAST": {
-        "title": "AI SAST"
-      },
-      "incidentResponse": {
-        "title": "AI Incident Response"
+        "title": "Secure the Next Generation of Autonomous Agents",
+        "subtitle": "Detect and mitigate emerging risks in agentic and multi-AI systems before they act beyond intent.",
+        "badgeText": "AI Agentic Scanning",
+        "challengeContent": "AI agents capable of autonomous decision-making can execute unintended or unsafe actions if manipulated or misaligned. Traditional security tools can't see or interpret agentic behavior.",
+        "solutionContent": "Aynigma's AI Agentic Scanning evaluates the security posture of AI agents, copilots, and orchestration frameworks. It tracks chain-of-thought logic, behavioral drift, and unsafe API calls to ensure compliance and prevent rogue operations.",
+        "keyCapabilities": {
+          "policy": {
+            "title": "Policy Enforcement",
+            "description": "Behavioral policy enforcement for AI agent frameworks"
+          },
+          "scanning": {
+            "title": "Continuous Scanning",
+            "description": "Continuous scanning for unsafe or unapproved actions"
+          },
+          "decision": {
+            "title": "Decision Flow Monitoring",
+            "description": "Monitoring of agent collaboration and decision flow"
+          },
+          "compatibility": {
+            "title": "Framework Compatibility",
+            "description": "Compatibility with LangChain, AutoGen, and MCP environments"
+          }
+        },
+        "businessOutcomes": {
+          "safe": {
+            "title": "Safe Actions",
+            "description": "Prevent unsafe agent actions before execution"
+          },
+          "regulatory": {
+            "title": "Regulatory Transparency",
+            "description": "Increase transparency and explainability for regulators"
+          },
+          "secure": {
+            "title": "Secure Autonomous Systems",
+            "description": "Secure autonomous AI systems in smart cities, defense, and finance"
+          },
+          "trust": {
+            "title": "Trust Building",
+            "description": "Build trust in agent-driven decision-making"
+          }
+        },
+        "ctaTitle": "Ensure your AI agents act safely and predictably.",
+        "ctaSubtitle": "Book an Agentic Security assessment."
       }
+    },
+
+    "mcpSecurity": {
+      "title": "Real-Time Defense for Intelligent Systems",
+      "subtitle": "Monitor, detect, and contain malicious or abnormal behavior during live AI operations.",
+      "badgeText": "AI Runtime Security",
+      "challengeContent": "Once deployed, AI models face continuous threats — from input manipulation and data exfiltration to malicious retraining attempts. Static testing is not enough; runtime visibility is essential.",
+      "solutionContent": "Aynigma's AI Runtime Security continuously monitors model behavior, user interactions, and inference outputs to detect real-time threats. Our system integrates with your SOC and SIEM tools to isolate compromised sessions and enforce policy-level guardrails automatically.",
+      "keyCapabilities": {
+        "anomaly": {
+          "title": "Anomaly Detection",
+          "description": "Real-time anomaly detection using behavioral baselines"
+        },
+        "shield": {
+          "title": "AI Shield",
+          "description": "AI shield for prompt injection and malicious query blocking"
+        },
+        "isolation": {
+          "title": "Session Isolation",
+          "description": "Automated isolation and containment of compromised sessions"
+        },
+        "soc": {
+          "title": "SOC Integration",
+          "description": "SOC and SIEM integration for unified incident response"
+        }
+      },
+      "businessOutcomes": {
+        "prevention": {
+          "title": "Exploit Prevention",
+          "description": "Prevent prompt-based exploits and live model abuse"
+        },
+        "compliance": {
+          "title": "Continuous Compliance",
+          "description": "Ensure continuous compliance and uptime"
+        },
+        "trust": {
+          "title": "Trust Strengthening",
+          "description": "Strengthen AI trustworthiness and response accuracy"
+        },
+        "response": {
+          "title": "Faster Response",
+          "description": "Reduce Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR)"
+        }
+      },
+      "ctaTitle": "Protect your AI models at runtime.",
+      "ctaSubtitle": "Deploy Aynigma's AI Shield today.",
+      "trustIndicators": {
+        "monitoring": "Real-Time Monitoring",
+        "soc": "SOC Integrated",
+        "protection": "24/7 Protection"
+      }
+    },
+
+    "compliance": {
+      "title": "Compliance Monitoring",
+      "description": "Map AI risks to NCA ECC and PDPL. Automate evidence and reporting."
+    },
+    "aiSCA": {
+      "title": "AI SCA",
+      "description": "Security Composition Analysis for AI supply chain and dependency management."
+    },
+    "aiSAST": {
+      "title": "AI SAST",
+      "description": "Static Application Security Testing specifically designed for AI applications and models."
+    },
+    "incidentResponse": {
+      "title": "AI Incident Response",
+      "description": "Specialized incident response and recovery procedures for AI system breaches."
     }
   },
   "industries": {
@@ -68,18 +301,46 @@
     "titleHighlight": "impact",
     "description": "Tailored solutions across critical sectors.",
     "items": {
-      "healthcare": {"title": "HealthCare", "description": "Empowering hospitals, clinics, and research institutions with digital transformation, AI diagnostics, and patient management solutions."},
-      "finance": {"title": "Finance", "description": ""},
-      "technology": {"title": "Technology", "description": ""},
-      "manufacturing": {"title": "Manufacturing", "description": ""},
-      "legal": {"title": "Legal", "description": ""},
-      "education": {"title": "Education", "description": ""},
-    "government": {
-      "title": "Government & Smart Cities",
-      "description": "Building digital governance systems, smart city infrastructure, and citizen engagement platforms to enable better services."
-    },      "banking": {"title": "Banking & Finance", "description": "Enhancing banking operations with secure fintech solutions, AI fraud detection, and seamless digital payment experiences."},
-      "energy": {"title": "Oil & Energy", "description": "Enabling sustainability and operational efficiency through IoT monitoring, predictive maintenance, and data intelligence."},
-      "smes": {"title": "SMEs", "description": "Helping small and medium enterprises scale through affordable digital tools, automation, and growth-driven strategies."}
+      "healthcare": {
+        "title": "Healthcare",
+        "description": "Empowering hospitals, clinics, and research institutions with digital transformation, AI diagnostics, and patient management solutions."
+      },
+      "finance": {
+        "title": "Finance",
+        "description": "Enhancing banking operations with secure fintech solutions, AI fraud detection, and seamless digital payment experiences."
+      },
+      "technology": {
+        "title": "Technology",
+        "description": "Collaborating with technology leaders to build scalable software, cloud infrastructure, and next-generation AI applications."
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "Optimizing production lines using IoT, data analytics, and automation to increase efficiency and reduce downtime."
+      },
+      "legal": {
+        "title": "Legal",
+        "description": "Providing technology solutions for case management, document automation, and AI-powered legal research assistance."
+      },
+      "education": {
+        "title": "Education",
+        "description": "Transforming learning through personalized e-learning platforms, virtual classrooms, and data-driven insights."
+      },
+      "government": {
+        "title": "Government & Smart Cities",
+        "description": "Building digital governance systems, smart city infrastructure, and citizen engagement platforms to enable better services."
+      },
+      "banking": {
+        "title": "Banking & Finance",
+        "description": "Enhancing banking operations with secure fintech solutions, AI fraud detection, and seamless digital payment experiences."
+      },
+      "energy": {
+        "title": "Oil & Energy",
+        "description": "Enabling sustainability and operational efficiency through IoT monitoring, predictive maintenance, and data intelligence."
+      },
+      "smes": {
+        "title": "SMEs",
+        "description": "Helping small and medium enterprises scale through affordable digital tools, automation, and growth-driven strategies."
+      }
     }
   },
   "hero": {
@@ -198,6 +459,15 @@
           "support": "Support",
           "community": "Community",
           "status": "Status"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "privacy": "Privacy Policy",
+          "terms": "Terms & Conditions",
+          "cookies": "Cookie Policy",
+          "gdpr": "GDPR Compliance"
         }
       }
     },

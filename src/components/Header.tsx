@@ -20,10 +20,8 @@ import {
 } from 'lucide-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import i18n from 'i18next'
 import logo from '../assets/Frame 3020.svg'
 import LanguageSwitcher from './LanguageSwitcher'
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../i18n'
 
@@ -31,14 +29,6 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const { t } = useTranslation()
-
-  // Set document direction based on language
-  useEffect(() => {
-    const dir = i18n.language === 'ar' ? 'rtl' : 'ltr'
-    document.documentElement.dir = dir
-    document.documentElement.lang = i18n.language
-    document.body.dir = dir // Ensure body has the correct direction
-  }, [])
 
   const solutions = [
     { name: 'AI Red Teaming', href: '/ai-red-teaming', icon: Shield },
@@ -135,12 +125,7 @@ export default function Header() {
   }
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b border-[var(--brand-border-weak)] bg-[var(--brand-bg)]/80 backdrop-blur-xl ${
-        i18n.language === 'ar' ? 'rtl' : 'ltr'
-      }`}
-      dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--brand-border-weak)] bg-[var(--brand-bg)]/80 backdrop-blur-xl">
       <div
         className='absolute inset-0 opacity-30 pointer-events-none'
         style={{
@@ -182,9 +167,7 @@ export default function Header() {
                 </a>
                 {item.hasDropdown && (
                   <div
-                    className={`absolute top-full w-[80vw] ${
-                      i18n.language === 'ar' ? 'right-1' : 'left-1'
-                    } pt-2 ${
+                    className={`absolute top-full right-1 pt-2 ${
                       activeMenu === item.name
                         ? 'opacity-100 visible translate-y-0'
                         : 'opacity-0 invisible translate-y-2'
@@ -229,7 +212,7 @@ export default function Header() {
                           <div className='grid grid-cols-2 gap-6 p-8 sm:gap-8'>
                             <div>
                               <h3 className='text-sm font-medium text-[var(--brand-primary)] uppercase tracking-wider'>
-                                Latest Updates
+                                {t('header.flyout.latestUpdates')}
                               </h3>
                               <div className='mt-4 space-y-4'>
                                 {/* Add your latest updates here */}
@@ -238,17 +221,17 @@ export default function Header() {
                                   className='block hover:text-[var(--brand-primary)] transition-colors duration-200'
                                 >
                                   <p className='text-sm font-medium'>
-                                    New Feature Release
+                                    {t('header.flyout.newFeatureRelease')}
                                   </p>
                                   <p className='mt-1 text-xs text-[var(--brand-foreground-soft)]'>
-                                    Check out our latest security features
+                                    {t('header.flyout.checkLatestFeatures')}
                                   </p>
                                 </a>
                               </div>
                             </div>
                             <div>
                               <h3 className='text-sm font-medium text-[var(--brand-primary)] uppercase tracking-wider'>
-                                Resources
+                                {t('header.flyout.resources')}
                               </h3>
                               <div className='mt-4 space-y-4'>
                                 {/* Add your resources here */}
@@ -257,10 +240,10 @@ export default function Header() {
                                   className='block hover:text-[var(--brand-primary)] transition-colors duration-200'
                                 >
                                   <p className='text-sm font-medium'>
-                                    Documentation
+                                    {t('header.flyout.documentation')}
                                   </p>
                                   <p className='mt-1 text-xs text-[var(--brand-foreground-soft)]'>
-                                    Browse our technical guides
+                                    {t('header.flyout.browseTechnicalGuides')}
                                   </p>
                                 </a>
                               </div>
@@ -309,7 +292,7 @@ export default function Header() {
           </button>
         </div>
         {mobileMenuOpen && (
-          <div className='lg:hidden fixed inset-x-0 top-[72px] bg-[var(--brand-bg)] border-t border-[var(--brand-border-weak)] max-h-[calc(100vh-72px)] overflow-y-auto'>
+          <div className='lg:hidden fixed inset-x-0 top-[72px] bg-[var(--brand-bg)] border-t border-[var(--brand-border-weak)]'>
             <div className='container mx-auto px-6 py-8 space-y-6'>
               {navigation.map((item) => (
                 <div key={item.name} className='space-y-4'>
@@ -358,6 +341,9 @@ export default function Header() {
                   )}
                 </div>
               ))}
+              <div className='flex px-6 py-8 justify-end items-center gap-4'>
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}
